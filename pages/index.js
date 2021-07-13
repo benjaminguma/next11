@@ -19,13 +19,13 @@ export default function Home () {
       <footer className={styles.footer} style={{marginTop: '400rem'}}>
           <div style={{display:"grid",gap:"12rem"}}>
           {
-            images.map((img,index)=>(
-              <Image
+            images.map((img,index)=>(<Image
               src={img}
               width={500}
               height={340}
               alt="Vercel Logo"
               placeholder="blur"
+              key={index}
             />))
           }
 
